@@ -1,5 +1,5 @@
 class Plant:
-    def __init__(self, name: str, height: int, age: int) -> None:
+    def __init__(self, name: str, height: float, age: int) -> None:
         self._name = name
         if height < 0:
             self._height = 0
@@ -11,7 +11,7 @@ class Plant:
             self._age = age
 
     def show(self) -> str:
-        return f"{self._name}: {self._height}cm, {self._age} days old"
+        return f"{self._name}: {self._height:.1f}cm, {self._age} days old"
 
     def set_height(self, newdata: int):
         if newdata < 0:
