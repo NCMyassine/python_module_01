@@ -18,16 +18,12 @@ class Plant:
 
 def main() -> None:
     print("=== Plant Factory Output ===")
-    rose = Plant("Rose", round(25, 1), 30)
-    print("Created: ", rose.show())
-    oak = Plant("Oak", round(200, 1), 365)
-    print("Created: ", oak.show())
-    Cactus = Plant("Cactus", round(5, 1), 90)
-    print("Created: ", Cactus.show())
-    sunflower = Plant("Sunflower", round(80, 1), 45)
-    print("Created: ", sunflower.show())
-    fern = Plant("Fern", round(15, 1), 120)
-    print("Created: ", fern.show())
+    plnts = [Plant("Rose", round(25, 1), 30), Plant("Oak", round(200, 1), 365),
+             Plant("Cactus", round(5, 1), 90),
+             Plant("Sunflower", round(80, 1), 45),
+             Plant("Fern", round(15, 1), 120)]
+    for e in plnts:
+        print("Created: ", e.show())
 
 
 if __name__ == "__main__":
