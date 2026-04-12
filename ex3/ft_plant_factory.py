@@ -18,10 +18,13 @@ class Plant:
 
 def main() -> None:
     print("=== Plant Factory Output ===")
-    plnts = [Plant("Rose", round(25, 1), 30), Plant("Oak", round(200, 1), 365),
-             Plant("Cactus", round(5, 1), 90),
-             Plant("Sunflower", round(80, 1), 45),
-             Plant("Fern", round(15, 1), 120)]
+    plnts = [
+        Plant("Rose", round(25, 1), 30),
+        Plant("Oak", round(200, 1), 365),
+        Plant("Cactus", round(5, 1), 90),
+        Plant("Sunflower", round(80, 1), 45),
+        Plant("Fern", round(15, 1), 120),
+    ]
     for e in plnts:
         print("Created: ", e.show())
 

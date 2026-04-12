@@ -25,7 +25,7 @@ def main() -> None:
     print(f"{rose.show()}")
     for i in range(2, 8):
         print(f"=== Day {i} ===")
-        growth = + rose.grow(growth)
+        growth = +rose.grow(growth)
         rose.Age()
         print(f"{rose.show()}")
     print(f"Growth this week: {growth}cm")
