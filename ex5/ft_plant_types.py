@@ -71,7 +71,6 @@ class Vegetable(Plant):
 
 
 def main() -> None:
-    i: int = 2
     growth: float = 0
     print("=== Garden Plant Types ===")
     print("=== Flower")
